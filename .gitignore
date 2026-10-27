@@ -1,0 +1,7 @@
+dist/
+__pycache__/
+*.pyc
+*.iso
+*.xex
+*.xxx
+_backup_es/

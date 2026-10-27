@@ -1,0 +1,29 @@
+Copyright (c) 2026 Donelys Entretenimiento. Todos los derechos reservados salvo lo que se concede abajo.
+Copyright (c) 2026 Donelys Entretenimiento. All rights reserved except as granted below.
+
+1. TRADUCCION / TRANSLATION  (src/traducciones_es.json, src/traducciones_paquetes.json y los textos en espanol de la interfaz)
+   Licencia / License: Creative Commons Atribucion-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)
+   Resumen / Deed:  https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es
+   Texto legal / Legal code:  https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.es
+   - Puedes copiar y redistribuir la traduccion sin cambios, citando a "Donelys Entretenimiento", sin fines comerciales.
+   - No puedes venderla, ni incluirla en productos de pago, ni publicar versiones modificadas, ni quitar los creditos.
+   - You may copy and redistribute the translation unchanged, crediting "Donelys Entretenimiento", for non-commercial purposes only.
+   - You may not sell it, bundle it in paid products, publish modified versions, or remove the credits.
+   Esta licencia cubre solo el trabajo de traduccion. No concede ningun derecho sobre el juego, sus textos originales,
+   marcas, voces ni musica, que pertenecen a sus titulares.
+   This license covers only the translation work. It grants no rights over the game, its original text, trademarks,
+   voices or music, which belong to their owners.
+
+2. CODIGO / CODE  (src/*.py, src/gui/, build_setup.py)
+   Licencia MIT / MIT License: ver LICENSE-CODE-MIT.txt
+   Nota: el codigo puede reutilizarse libremente, pero eso NO incluye los textos de la traduccion (punto 1).
+
+3. TERCEROS / THIRD PARTY
+   Herramientas y bibliotecas con sus propias licencias: ver THIRD_PARTY_NOTICES.md
+   Tools and libraries under their own licenses: see THIRD_PARTY_NOTICES.md
+
+4. EL JUEGO / THE GAME
+   "50 Cent: Blood on the Sand" y todo su contenido original son propiedad de sus titulares. Este proyecto de aficionados
+   no esta afiliado a ellos, no incluye ningun archivo del juego y necesita tu propia copia.
+   "50 Cent: Blood on the Sand" and all its original content belong to their owners. This fan project is not affiliated with
+   them, includes no game files and requires your own copy.

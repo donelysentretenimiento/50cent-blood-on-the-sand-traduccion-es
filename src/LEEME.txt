@@ -1,0 +1,61 @@
+SKULLBURGLAR - TRADUCCION ESPANOLA by Donelys  (v1.3)
+============================================================
+Traduccion al espanol de Espana de "50 Cent: Blood on the Sand" para el port Skullburglar (Windows).
+Audio original en ingles. Tono de calle/bandas fiel al original, sin censurar.
+
+QUE TRADUCE (3805 lineas)
+  - Menus, opciones, tienda, pausa, clasificacion, dialogos del sistema, HUD, logros y objetivos.
+  - Armas, trucos, provocaciones, contraataques letales, misiones y capitulos.
+  - Consejos de las pantallas de carga.
+  - Subtitulos de las cinematicas y dialogos/replicas de todos los personajes.
+  - Tutoriales, objetivos de mision, etiquetas de marcadores y avisos de conduccion (373 textos en los paquetes .xxx del juego).
+QUE NO TRADUCE (todavia)
+  - Rotulos de interfaz incrustados (UILabel/UITexture), textos dentro de texturas o videos y mensajes internos del motor:
+    no estudiados todavia.
+
+REQUISITOS
+  - Skullburglar ya instalado y funcionando (con sus archivos de juego instalados por el lanzador).
+  - Python 3.8 o superior (python.org).  Las dependencias pycryptodome y lzallright se instalan solas la primera vez.
+  - Cerrar el juego antes de aplicar o restaurar.
+
+INSTALAR
+  1. Descomprime esta carpeta donde quieras.
+  2. Doble clic en  1_APLICAR_TRADUCCION.bat
+     Busca la carpeta del juego sola (%LOCALAPPDATA%\bots-recomp\game). Si la tienes en otro sitio, abre una consola en esta
+     carpeta y ejecuta:   python aplicar_traduccion.py apply --game "RUTA\game"
+  3. Abre el juego como siempre.
+
+PARA ISO DE XBOX 360 (Xenia o consola desbloqueada)
+  - Setup_Traduccion_ES_Donelys.exe (programa aparte, todo incluido): elige tu ISO, espera y obtienes una ISO nueva traducida.
+    Tu ISO original no se modifica. En este paquete: parcheador_iso.py <ISO> [<ISO_salida>] hace lo mismo desde la consola.
+  - Una consola retail no acepta el default.xex modificado: hace falta RGH/JTAG o un emulador como Xenia.
+
+COMPROBAR / DESINSTALAR
+  - 2_ESTADO.bat            -> ORIGINAL, TRADUCIDO, INCOMPLETO o CONFLICTO.
+  - 3_RESTAURAR_ORIGINAL.bat -> devuelve los archivos originales exactos (verificados por hash).
+
+COMO FUNCIONA (seguridad)
+  - Modifica C1Game\Localization\Coalesced.INT, default.xex y 38 paquetes .xxx de C1Game\CookedXenon (los que contienen
+    textos de tutorial/objetivos/conduccion; cada uno conserva exactamente su tamano original). El juego comprueba el SHA-1 de
+    Coalesced.INT contra una tabla dentro de default.xex; el parche la actualiza para que acepte el archivo traducido.
+    Los paquetes no estan en esa tabla ni se validan por tamano del TOC (probado).
+  - Antes de tocar nada verifica que los archivos son los de la version compatible y guarda una copia verificada en
+    <juego>\_backup_es (unos 450 MB; aplicar tarda unos minutos). Si algo no coincide (otro mod, otra version) NO toca nada.
+  - Los paquetes se reconstruyen en tu equipo desde los tuyos: el texto de cada objeto se reescribe recalculando los tamanos
+    internos y se verifica antes de instalarlo. Cada archivo se escribe de forma atomica y se verifica. Si la instalacion se
+    interrumpe, el estado es INCOMPLETO y se puede volver a aplicar o restaurar sin perder nada.
+  - No toca la ISO, las partidas guardadas ni la configuracion. No incluye ningun archivo del juego: el archivo traducido se
+    genera en tu equipo a partir del tuyo.
+  - Version compatible: default.xex SHA-1 de2569aabc937f9c6528753e2f46d624f7ff7276 y Coalesced.INT SHA-1
+    323e79463207fb810f651688541f88ee9243b82f (disco USA/Europa En,Fr,De).
+
+PROBLEMAS FRECUENTES
+  - "No puedo escribir en ...": cierra el juego.
+  - "CONFLICTO": los archivos no son los originales ni los de esta traduccion. Reinstala/verifica el juego con el lanzador y repite.
+  - Si una actualizacion de Skullburglar sobrescribe los archivos, simplemente vuelve a aplicar.
+
+LICENCIAS
+  - El formato de paquetes se basa en tools/upk_decompress.py de github.com/nlwstein/skullburglar (BSD 3-Clause, (c) 2026 the
+    Skullburglar contributors); upk_core.py es una reimplementacion propia con atribucion.
+
+Proyecto de aficionados, sin relacion con 50 Cent, el desarrollador ni el editor del juego. Necesitas tu propia copia del juego.

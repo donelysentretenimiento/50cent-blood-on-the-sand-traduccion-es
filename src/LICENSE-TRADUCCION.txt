@@ -1,0 +1,3 @@
+Los textos en espanol de este directorio (traducciones_es.json, traducciones_paquetes.json) son (c) 2026 Donelys Entretenimiento
+y se distribuyen bajo CC BY-NC-ND 4.0: https://creativecommons.org/licenses/by-nc-nd/4.0/
+Sin fines comerciales, sin modificaciones, citando al autor y manteniendo los creditos. Ver ../LICENSE
